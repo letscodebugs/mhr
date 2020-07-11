@@ -3,10 +3,12 @@ package com.tyu.mapper;
 import com.tyu.pojo.Position;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface PositionMapper {
     int deleteByPrimaryKey(Integer id);
 

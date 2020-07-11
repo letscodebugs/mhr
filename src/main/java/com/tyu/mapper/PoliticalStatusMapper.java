@@ -2,10 +2,12 @@ package com.tyu.mapper;
 
 import com.tyu.pojo.PoliticalStatus;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface PoliticalStatusMapper {
     int deleteByPrimaryKey(Integer id);
 

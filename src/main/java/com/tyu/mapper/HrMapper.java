@@ -4,10 +4,12 @@ import com.tyu.pojo.Hr;
 import com.tyu.pojo.Role;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface HrMapper {
     int deleteByPrimaryKey(Integer id);
 

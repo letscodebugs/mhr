@@ -3,11 +3,13 @@ package com.tyu.mapper;
 import com.tyu.pojo.Employee;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.List;
 
 @Mapper
+@Repository
 public interface EmployeeMapper {
     int deleteByPrimaryKey(Integer id);
 

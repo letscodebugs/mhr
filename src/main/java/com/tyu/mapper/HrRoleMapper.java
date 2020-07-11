@@ -3,8 +3,10 @@ package com.tyu.mapper;
 import com.tyu.pojo.HrRole;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 @Mapper
+@Repository
 public interface HrRoleMapper {
     int deleteByPrimaryKey(Integer id);
 

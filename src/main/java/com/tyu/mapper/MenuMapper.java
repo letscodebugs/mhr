@@ -2,10 +2,12 @@ package com.tyu.mapper;
 
 import com.tyu.pojo.Menu;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface MenuMapper {
     int deleteByPrimaryKey(Integer id);
 

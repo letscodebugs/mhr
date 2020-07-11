@@ -2,8 +2,10 @@ package com.tyu.mapper;
 
 import com.tyu.pojo.Employeeec;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 @Mapper
+@Repository
 public interface EmployeeecMaper {
     int deleteByPrimaryKey(Integer id);
 
